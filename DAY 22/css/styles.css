@@ -1,0 +1,134 @@
+:root {
+    --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    --font-size: 0.9rem;
+    --text-color: #646464;
+    --title-color: #FFF;
+    --base-color: #6367FD;
+    --secondary-color: #6C81E9;
+}
+
+
+body{
+    font-family: var(--font-tech);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.positioning{
+    position: relative;
+    height: inherit;
+}
+
+/* -------------------- MAIN --------------------*/
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(rgba(4, 25, 49, 0.295), rgba(8, 41, 78, 0.767)), url("../img/kolder.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 25px solid #3348b436;
+}
+
+.sub-title{
+    line-height: 0.8;
+}
+
+nav{
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav a{
+    color: #FFF;
+    transition: 0.5s;
+    margin: 0px 2px;
+    width: 110px;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav a:hover, nav .active{
+    background-color: #F5A623;
+    color: #FFF;
+    
+}
+
+.content .dropdown-menu{
+   background-color: #242E4C;
+   border: 1px solid #303b5c;
+}
+
+.content .dropdown-item{
+    color: #FFF;
+}
+
+.content .dropdown-item:hover{
+    background-color: #FF6144;
+}
+
+main{
+    height: 85%;
+    width: 100%;
+    
+}
+
+.heading{
+    text-align: left;
+    padding: 20px 10%;
+    color: #FFF;
+}
+
+.title{
+    color: #FFF;
+    margin: 20% 0 15px;
+    font-size: 4rem;
+}
+
+.text-content{
+    color:#ddd9d9;
+    line-height: 1.8;
+    font-size: 0.8rem;
+}
+
+
+
+main .container-fluid{
+    height: 100%;
+}
+
+
+.heading button{
+    padding: 10px 15px 10px 20px;
+    color: #FFF;
+    border:none;
+    box-shadow: none;
+    border-radius: 20px;
+    background-color: #F5A623;
+    transition: transform 0.4s;
+}
+
+.heading button:hover{
+    transform: scale(1.1);
+}
+
+.heading button span{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+

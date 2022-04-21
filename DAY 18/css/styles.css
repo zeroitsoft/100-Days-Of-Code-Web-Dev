@@ -1,0 +1,118 @@
+:root {
+    --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    --font-size: 0.9rem;
+    --text-color: #dad5d5;
+    --title-color: #FFF;
+    --base-color: #353942;
+    --secondary-color: #3F444F;
+}
+
+
+body{
+    font-family: var(--font-tech);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    height: 100vh;
+    background-color: var(--base-color);
+}
+
+.positioning{
+    position: relative;
+    height: inherit;
+}
+
+/* -------------------- MAIN --------------------*/
+
+main{
+    background-color: var(--secondary-color);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a{
+    color: #FFF;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: #F1AC28;
+    color: #FFF;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #353942;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.arrow:hover{
+    transform: translate(-20px, 10px);
+}
+
+.centered-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width:60%;
+    text-align: center;
+    margin:0 0;
+}
+
+.subscribe{
+    width: 50%;
+    margin: 20px auto;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.subscribe input{
+    background-color: #797C84;
+    color: #FFF;
+    padding: 20px 25px !important;
+    border-radius: 50px;
+}
+
+.subscribe input:focus{
+    z-index: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: #FFF;
+}
+
+.subscribe input::placeholder{
+    color: #FFF;
+}
+
+.subscribe span{
+    display: inline-block;
+    margin-top: -4px;
+    border-radius: 50px;
+    margin-left: -40px;
+    z-index: 10;
+    background-color: #F1AC28;
+    border:none;
+    color: #FFF;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition:transform 0.5s;
+}
+
+.subscribe span:hover{
+    transform: scale(1.1);
+}

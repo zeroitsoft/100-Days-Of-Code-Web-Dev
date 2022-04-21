@@ -1,0 +1,137 @@
+:root {
+  --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --font-size: 0.8rem;
+  --font-color: #9e9e9f;
+}
+
+.box-shad{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+  background-color: #2A2A3B;
+  height: 100vh;
+  
+}
+
+.line{
+  position: absolute;
+  top:0;
+  left: 60%;
+  width: 20px;
+  height: 100vh;
+  background-color: #E89873;
+  z-index: 0;
+}
+
+/* ------------------- TOP CONTAINER -------------------*/
+.top-container{
+  position:absolute;
+  top: 15%;
+  left: 30%;
+  padding:20px;
+  width:40%;
+  background-color: #2E2E41;
+  height: 30vh;
+  border-radius: 10px;
+  transition: transform 0.4s;
+  cursor:pointer;
+}
+
+.top-container:hover{
+  transform: translateX(30%);
+}
+
+.flex-container {
+  display:flex;
+  justify-content: space-around;
+  align-items: stretch;
+  color: #fff;
+}
+
+.flex-item-left{
+  flex-basis: 70%;
+}
+
+.flex-item-right{
+  flex-basis:20%;
+}
+
+.title{
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #bbbac5;
+}
+.text-content{
+  font-size: 0.9rem;
+  color: #9494AC;
+}
+
+.btn-colored{
+  border:none;
+  outline:none;
+  box-shadow: none;
+  padding:10px 30px;
+  background-color: #E89873;
+  color: #FFF;
+  font-weight: normal;
+  border-radius:5px;
+  transition: background-color 0.5s;
+}
+
+.btn-colored:hover{
+  background-color: #fc7537;
+}
+
+.flex-item-right{
+  color:#E89873;
+}
+
+.flex-item-right p{
+  font-size: 0.9rem;
+}
+
+
+
+/* ------------------- BOTTOM CONTAINER -------------------*/
+
+.bottom-container{
+  position:absolute;
+  bottom:15%;
+  right: 25%;
+  padding:20px;
+  width:20%;
+  background-color: #2E2E41;
+  height: 30vh;
+  border-radius: 10px;
+  color: #bbbac5;
+  text-align: center;
+  transition: transform 0.4s;
+  cursor:pointer;
+}
+
+.bottom-container:hover{
+  transform: translateX(-20%);
+}
+
+.amount{
+  font-size: 1.5rem;
+  
+}
+
+.payment{
+  font-size: 0.8rem;
+}
+
+.bottom-container button{
+  background-color: transparent;
+  border:1px solid #E89873;
+  color: #E89873;
+}
+
+.bottom-container button:hover{
+  color: #FFF;
+}

@@ -1,0 +1,236 @@
+:root {
+    --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    --font-size: 0.9rem;
+    --text-color: #242E4C;
+    --title-color: #FFF;
+    --base-color: #6367FD;
+    --secondary-color: #dce0e0;
+}
+
+
+body{
+    font-family: var(--font-tech);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    height: 100vh;
+    background-image: linear-gradient(45deg, #3ABEE6, #7AD8E0);
+}
+
+.positioning{
+    position: relative;
+    height: inherit;
+}
+
+/* -------------------- MAIN --------------------*/
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav a{
+    color: var(--text-color);
+    transition: 0.5s;
+    margin: 0 5px;
+    width: 120px;
+    height: 100%;
+    max-width: 150px;
+    padding:0;
+    position: relative;
+    border-radius: 5px;
+}
+
+.link-text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+nav{
+    height: 8%;
+}
+
+ul{
+    height: 100%;
+}
+
+nav a:hover, .active{
+    background-color: #35C2CF;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+.content .dropdown-menu{
+   background-color: #242E4C;
+   border: 1px solid #303b5c;
+}
+
+.content .dropdown-item{
+    color: #FFF;
+}
+
+.content .dropdown-item:hover{
+    background-color: #FF6144;
+}
+
+main{
+    
+    width: 90%;
+    margin-left:10%;
+    
+}
+
+.title{
+    color: var(--title-color);
+    margin: 20% 0 15px;
+    line-height: 1.6;
+    max-width: 50%;
+}
+
+.delivery input{
+    background-color: #FFF;
+    font-size: 0.8rem;
+    padding:25px 50px;
+    border-right: none;
+    border:none;
+    transform: translateX(-9%);
+   
+}
+
+.delivery input:focus{
+    box-shadow: none;
+    z-index: 0;
+}
+
+#locate{    
+    transform: scale(0.6) translateX(0%);
+    background-color: transparent;
+    border:none;
+    z-index: 5;
+}
+
+#navigator{
+    background-color: #FFF;
+    border:0;
+    padding:0 5px;
+    height: inherit;
+    z-index: 5;
+    transform: scale(0.5) translateX(-600%);
+}
+
+#btn-find{
+    background-color: #F89259;
+    color: #FFF;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 0.8rem;
+    z-index: 6;
+    width: 120px;
+    border:none;
+    transform: translateX(-150%);
+    padding:0 18%;
+}
+
+#btn-find:hover{
+    transform: scale(1.05) translateX(-150%);
+}
+
+.date-text{
+    display: inline-block;
+    transform: translateX(30px);
+    font-size: 1.5rem;
+}
+
+
+main .container-fluid{
+    height: 100%;
+}
+
+main .row{
+    height: inherit;
+}
+
+.image-container img{
+    width: 100%;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.image-container{
+    overflow: hidden;
+    padding-top:10px;
+    transform: translate(-5%, 5%);
+}
+
+.image-container img:hover{
+    width:100%;
+    transform: scale(1.24);
+}
+
+
+footer{
+    position:absolute;
+    bottom: 5%;
+    left:50%;
+    width: 80%;
+    height: 25%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+}
+
+
+footer .container-fluid{
+    padding: 30px 50px;
+    height: 100%;
+}
+
+footer .row{
+    height: inherit;
+    
+}
+
+.element{
+    padding: 0 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.element:hover{
+    transform: translateY(-10px);
+}
+
+footer .element h5{
+    line-height: 1.2;
+}
+
+.cancel{
+    padding: 7px 10px;
+    background-color: gainsboro;
+    border-radius: 20px;
+}
+
+.cancel img{
+    margin: 0 5px;
+}

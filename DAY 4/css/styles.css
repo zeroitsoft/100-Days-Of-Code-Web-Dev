@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animated:hover{
+    transform: translateY(-1px) scale(1.01);
+    transition: linear 0.1s;
+}
+
+.positioned {
+  position: relative;
+}
+
+.centered-X {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centered-Y {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.centered-XY {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-image: linear-gradient(-135deg, #598ae0, #0abbf1);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  width: 100%;
+  height: 100vh;
+  padding: 5% 20%;
+  color: #b6b6b6;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0px 20px 50px 5px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 30%;
+  height: 70vh;
+  transition: margin-top 0.3s;
+}
+
+.container {
+  padding: 15px 50px; 
+}
+
+main:hover{
+  margin-top: -15px;
+}
+
+main h2 {
+  margin: 50px auto 25px auto;
+  text-align: center;
+  color: #00c3ff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin: 20px 0;
+  width: 97%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(199, 194, 194);
+  font-size: 1.1em;
+  
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+
+  width:100%;
+  border-bottom: 3px solid #3a99d0;
+  transition: width 0.3s;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.acceptance{
+    margin:15px 0;
+}
+
+/* ----------- Custom checkbox ----------- */
+
+.label-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 3px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:0.9em;
+  
+}
+  
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(223, 213, 213);
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.label-container input:checked ~ .checkmark {
+  background-color: #00c3ff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label-container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* ----------- Custom checkbox ----------- */
+
+.terms{
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+input[type='submit']{
+    border:none;
+    box-shadow: none;
+    width: 40%;
+    font-weight: bold;
+    color:#FFF;
+    background-color:#00c3ff;
+    padding:15px;
+    margin:15px 20px 15px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(10, 187, 241, 0.2), 0 6px 20px 0 rgba(10, 187, 241, 0.19);
+    cursor: pointer;
+}
+
+.existing-account{
+    display: inline-block;
+    font-size: 0.9em;
+    width:50%;
+    text-align: right;
+}
+
+span > a{
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+.social-container{
+    position: absolute;
+    width: 100%;
+    height: 13vh;
+    color: #FFF;
+    background-color: #00c3ff;
+    bottom:0;
+    left:0;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.social-icon{
+    display:inline-block;
+    margin: 20px;
+    width:30px;
+}
+
+/* .social-container a:last-child > img{
+    width: 35px;
+} */

@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.centered-X{
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.centered-Y{
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.centered-XY{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(150deg, #ffffff86, #FFEDED);
+}
+
+.trans-rectangle{
+    position: absolute;
+    width:40%;
+    height: 50vh;
+    top:45%;
+    background-color: #982C32;
+    border:1px solid #982C32;
+    border-radius: 50px;
+    opacity: 0.04;
+}
+
+/* ------------ MAIN ----------- */
+
+main{
+    position:absolute;
+    margin-top:-2%;
+    padding:50px 80px;
+    width:25%;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 100px 0 rgba(51, 13, 219, 0.1);
+    border-radius: 25px;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.centered-img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(207, 165, 179, 0.24);
+    margin:0 auto;
+    border-radius: 100%;
+    text-align: center;
+    
+}
+
+.centered-img > img{
+    position: absolute;
+    width:110px;
+    height: 110px;
+    clip-path: circle(44.7% at 50% 50%);
+    background-color: rgba(207, 165, 179, 0.192);
+    border:1px solid rgba(207, 165, 179, 0.24);
+}
+
+.description{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.description p:first-child{
+    margin:30px 0;
+}
+
+.description h3{
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.description p:last-child{
+    margin:30px auto;
+    background-color: rgba(207, 165, 179, 0.192);
+    max-width: 250px;
+    padding:10px 0;
+    border-radius: 5px;
+}
+
+input[type='text']{
+    width:100%;
+    padding:15px 10px;
+    margin:10px 0;
+    outline:none;
+    border:1px solid #97A0B4;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+[type='text']:focus{
+    border:1px solid rgba(164, 8, 101, 0.2);
+    box-shadow: 0 2px 4px 0px rgba(164, 8, 101, 0.2), 0px 3px 10px 0px rgba(164, 8, 101, 0.05);
+}
+
+input[type='checkbox']{
+    width:25px;
+    height: 25px;
+}
+
+.positioning{
+    position: relative;
+}
+
+.positioning p{
+    position: absolute;
+    width:90%;
+    top:-5px;
+    left: 40px;
+    line-height: 1.5;
+}
+
+form a{
+    color:#A40865;
+}
+
+input[type='submit']{
+    width:100%;
+    margin: 40px 0 30px 0;
+    padding:15px 0;
+    border:none;
+    background-color: #A40865;
+    color: #F8EFF4;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+form > a:last-child{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}

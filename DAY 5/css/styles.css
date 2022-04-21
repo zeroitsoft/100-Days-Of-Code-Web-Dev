@@ -1,0 +1,292 @@
+:root {
+  --text: #20285E;
+  --grad-color-1: #869ff3;
+  --grad-color-2: #7684e2;
+  --angle: 120deg;
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--text);
+}
+
+.container{
+  background-image: linear-gradient(var(--angle), var(--grad-color-1), var(--grad-color-2));
+  position: absolute;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inner-container{
+  background-image: linear-gradient(120deg, #fefeff, #7482da);
+  height: 70vh;
+  opacity: 0.2;
+  border-radius: 25px;
+  transition: margin-top 0.3s;
+}
+
+.content-container{
+  background-image: none;
+  background-color: #FFF;
+  margin: 40px 40px;
+  opacity: 1;
+  z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 10 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: margin-top 0.3s;
+}
+
+.content-container:hover{
+  margin-top: -20px;
+  
+}
+
+.content-container:hover ~ .inner-container{
+  margin-top: 20px;
+  
+}
+
+/* ------------------ HEADING ------------------- */
+.heading{
+  font-size: 1.8em;
+}
+
+.weekly{
+  margin:50px 0;
+}
+
+.weekly > p{
+  display: inline-block;
+}
+
+.weekly p:first-child{
+  width:50%;
+  background-color: #E9E5F4;
+  border-radius: 50px;
+  padding: 5px 2px;
+  text-align: center;
+}
+
+.weekly p:last-child{
+  position:absolute;
+}
+
+.mid-top-right{
+  cursor: pointer;
+}
+
+.mid-top-right:hover .circle{
+  background-color: rgb(63, 149, 184);
+}
+
+.circle, .circle-large{
+  display: inline-block;
+  background-color: var(--text);
+  width:4px;
+  height: 4px;
+  border-radius: 100%;
+  margin:0 1px;
+}
+
+a{
+  display:inline-block;
+  text-decoration: none;
+  margin:0 1px;
+  border-radius:50px;
+  width: 85px;
+  padding:15px 0;
+  font-size:0.9em;
+}
+
+a:hover, .selected{
+  background-image: linear-gradient(120deg, #869ff3, #7684e2);
+  color: #FFF;
+  transition: 0.5s;
+}
+
+a:active {
+  background-image: linear-gradient(120deg, #869ff3, #3f4883);
+  color: #FFF;
+}
+
+
+/* ------------------ CHART ------------------- */
+.chart-content-container{
+  position:relative;
+  height: 30vh;
+}
+.chart-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width:100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.chart-item{
+  position:relative;
+  flex-basis: 7%;
+  z-index: 2;
+  /* border: 1px solid green; */
+  margin-left: 10%;
+}
+
+.bar-tall, .bar-small{
+  position: absolute;
+  display:inline-block; 
+  bottom:0;
+  left: 20%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #695eff, #425ceec9);
+  border-radius:10px;
+  padding:4px;
+}
+
+.bar-small{
+  left: 55%;
+  padding:2px;
+  background-image: linear-gradient(120deg, #ff5ef2, #eb112ec9);
+  height: 50%;
+}
+
+.mon{
+  height: 80%;
+  top:20%;
+}
+
+.tue{
+  height: 65%;
+  top:35%;
+}
+
+.wed{
+  height: 40%;
+  top:60%;
+}
+
+.thu{
+  height: 75%;
+  top:25%;
+}
+
+.fri{
+  height: 50%;
+  top:50%;
+}
+
+.sat{
+  height: 35%;
+  top:65%;
+}
+
+.sun{
+  height: 20%;
+  top:80%;
+}
+
+.chart-lines{
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height: 100%;
+  z-index: 1;
+}
+
+.line-container{
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.line-with-text{
+  position: absolute;
+  bottom:0;
+  width:inherit;
+  font-size: 0.8em;
+}
+
+.line, .line-text{
+  display: inline-block;
+  color: #20285E;
+}
+
+.line-with-text p{
+  position: relative;
+}
+
+
+.line{
+  position: absolute;
+  bottom:0%;
+  right:0;
+  background-color: #b7b7bb;
+  padding-bottom:1px;
+  width:94%;
+  
+}
+
+.lower{
+  bottom:0%;
+}
+
+.mid-lower{
+  bottom: 25%;
+}
+
+.upper{
+  top:0%;
+}
+
+.mid-upper{
+  bottom:75%;
+}
+
+.mid{
+  bottom:50%;
+}
+
+.line-with-text:not(:first-child) .line{
+  bottom:50%;
+}
+
+.line-container .line-with-text:last-child .line{
+  bottom:100%;
+}
+
+
+.days{
+  position: relative;
+  margin:15px 0;
+  
+}
+
+.day{
+  display: inline-block;
+  margin-left:50px;
+  width:26px;
+  font-size:0.8em;
+  color:#20285E;
+}
+
+
+.chart-category-list{
+  text-align: center;
+  font-size:0.85em;
+}
+
+.circle-large{
+  padding:5px;
+}
+
+.chart-category-list span:first-child{
+  background-image: linear-gradient(120deg, #695eff, #425ceec9);
+}
+
+.chart-category-list span:last-child{
+  background-image: linear-gradient(120deg, #ff5ef2, #eb112ec9);
+
+}

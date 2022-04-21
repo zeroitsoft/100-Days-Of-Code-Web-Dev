@@ -1,0 +1,171 @@
+:root {
+    --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    --font-size: 0.9rem;
+    --text-color: #646464;
+    --title-color: #FFF;
+    --base-color: #6367FD;
+    --secondary-color: #dce0e0;
+}
+
+
+body{
+    font-family: var(--font-tech);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.positioning{
+    position: relative;
+    height: inherit;
+}
+
+/* -------------------- MAIN --------------------*/
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(4, 25, 49, 0.295), rgba(8, 41, 78, 0.767)), url("../img/volcano.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav a{
+    color: #FFF;
+    transition: 0.5s;
+    margin: 0px 2px;
+    width: 135px;
+    max-width: 250px;
+    text-align: center;
+}
+
+nav a:hover, nav .active{
+    background-color: #F5A623;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+.content .dropdown-menu{
+   background-color: #242E4C;
+   border: 1px solid #303b5c;
+}
+
+.content .dropdown-item{
+    color: #FFF;
+}
+
+.content .dropdown-item:hover{
+    background-color: #FF6144;
+}
+
+main{
+    height: 85%;
+    width: 100%;
+    
+}
+
+.title{
+    text-align: center;
+    color: #FFF;
+    margin: 20% 0 15px;
+}
+
+.text-content{
+    color:#afafaf;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.delivery input{
+    background-color: #ffffff18;
+    font-size: 0.8rem;
+    padding:25px 50px;
+    border-right: none;
+    color:#cac7c7
+}
+
+.delivery input:focus{
+    background-color: #ffffff18;
+    color:#FFF;
+    box-shadow: none;
+    z-index: 0;
+}
+.delivery input::placeholder{
+    color:#cac7c7; 
+}
+
+.delivery #navigator{
+    background-color: #FFF;
+    border:0;
+    padding:0 5px;
+    height: inherit;
+    z-index: 5;
+    transform: scale(0.8) translateX(-150%);
+}
+
+.delivery #btn-find{
+    width: 150px;
+    background-color: #4a90e2;
+    color: #FFF;
+    transform: translateX(-40%) scale(1.04);
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 0.8rem;
+    z-index: 6;
+    border:none;
+    text-align: center;
+    padding:0 35%;
+    
+    
+}
+
+.delivery #btn-find:hover{
+    transform: scale(1.06) translateX(-40%);
+}
+
+main .container-fluid{
+    height: 100%;
+}
+
+
+
+.image-container img{
+    width: 100%;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.image-container{
+    overflow: hidden;
+    padding-top:10px;
+    transform: translate(-5%, 5%);
+}
+
+.image-container img:hover{
+    width:100%;
+    transform: scale(1.24);
+}
+
+.symbol span{
+    background-color: transparent;
+    border: none;
+    transform: scale(0.8) translateX(100%);
+}
+

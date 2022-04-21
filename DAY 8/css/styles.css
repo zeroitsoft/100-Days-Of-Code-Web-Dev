@@ -1,0 +1,279 @@
+:root {
+  --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --font-size: 0.8rem;
+  --font-color: #9E9E9F;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-lucid);
+  font-size: var(--font-size);
+
+  color: var(--font-color);
+}
+
+main{
+    width:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.frame-red {
+  border: 1px solid red;
+}
+
+.frame-blue {
+  border: 1px solid blue;
+}
+
+.frame-green {
+  border: 1px solid green;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: right;
+    align-items: stretch;
+}
+
+.txt-1{
+    font-size:0.5rem;
+}
+
+.txt-2{
+    font-size:0.6rem;
+}
+
+.txt-3{
+    font-size:0.7rem;
+}
+
+
+/* ----------------------- TOP SECTION ----------------------- */
+
+/* -------- LEFT ------- */
+
+.section-top {
+  padding: 40px 30px 20px 50px;
+  background-color: #D3C0ED;
+  border-radius: 10px 10px 0 0;
+}
+
+.button{
+    position: relative;
+    width:40%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.btn-text, .btn-img{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+
+.btn-img img{
+    margin: 10px auto;
+    width:20px;
+}
+
+.btn-text{
+    left:20px;
+}
+
+.btn-img{
+    right:0%;
+    height: 100%;
+    padding:0 10px;
+    border-left:1px solid #dcdce2;
+    
+}
+
+/* -------- RIGHT ------- */
+.section-top .right .button{
+    background-color: transparent;
+    width:30%;
+}
+
+.section-top .right .btn-img{
+    border:none;
+    right:5%;
+}
+
+.section-top .right .btn-text{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #FFF;
+    
+}
+
+.img-holder img{
+    width:50px;
+    border-radius: 50%;
+    border:1px solid gainsboro;
+    background-color: aliceblue;
+    padding:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:-5px;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------------- BOTTOM SECTION ----------------------- */
+.section-bottom{
+    padding: 20px 50px 0px 50px;
+    background-color: #EFE6F7;
+    border-radius: 0 0 10px 10px;
+}
+.keys-describe{
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: padding 0.4s;
+}
+
+.keys-describe:hover{
+    background-color: #ED1F69;
+    color: #FFF;
+    font-weight: bold;
+    padding:10px 15px;
+}
+
+.keys-describe:not(:first-child){ 
+    margin-left: 25px;
+}
+
+.search-btn{
+    background-color:#B18EF4
+}
+
+.search-btn img{
+    width: 20px;
+}
+
+.search-container{
+    width: 250px;
+}
+
+.icon{
+    width:18px;
+}
+
+.spin{
+    transition: transform 0.4s;
+    cursor:pointer;
+}
+
+.spin:hover{
+    transform:rotate(360deg)
+}
+
+.add-symbol{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.add-btn{
+    background-color: #ED1F69;
+    color: #FFF;
+    border:none;
+    outline: none;
+    font-family: var(--font-lucid);
+    transition: transform 0.2s;
+}
+
+.add-btn:hover{
+    background-color: #db5184;
+    transform: scale(1.02);
+}
+
+.project-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.project{
+    flex-basis: 32%;
+    background-color: #FFF;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: transform 0.2s
+}
+
+.project:hover{
+    transform: scale(1.05);
+}
+
+.prog-container{
+    height: 5px;
+}
+
+.title{
+    
+    font-size:1rem;
+}
+
+.prog-bar{
+    background-color: transparent;
+    background-image: linear-gradient(120deg, #ED1F69, #c9839d);
+}
+
+.hash-content p:first-child{
+    font-size: 0.65rem;
+}
+
+.hash-content > p{
+    display: inline-block;
+    
+}
+
+.menu{
+    margin-left:20px;
+}
+
+.menu .icon{
+   width:18px;
+}
+
+.pages a, .pages li{
+    background-color: transparent;
+    border:none;
+    color: var(--font-color)
+}
+
+.pages a img{
+    display: inline-block;
+    margin-top:-2px;
+    
+}
+
+.pages a:hover{
+    color:#ED1F69;
+    font-weight: bold;
+}
+
+
+.pages .active{
+    color:#ED1F69;
+    font-weight: bold;
+}
+
+.pages li:last-child a{
+    color:#ED1F69;
+    font-weight: bold;
+}

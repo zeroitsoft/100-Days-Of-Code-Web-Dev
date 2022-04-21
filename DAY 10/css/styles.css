@@ -1,0 +1,109 @@
+:root {
+  --font-lucid: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font-tech: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --font-size: 0.8rem;
+  --font-color: #9e9e9f;
+}
+
+.centered{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.bd-rd-1{
+  border-radius: 5px;
+}
+
+.bd-rd-2{
+  border-radius: 10px;
+}
+
+.bd-rd-3{
+  border-radius: 15px;
+}
+
+.bd-rd-4{
+  border-radius: 20px;
+}
+
+.full-w{
+  width:100%;
+}
+
+body{
+  background-color: #E6E6FF;
+  height: 100vh;
+  font-family: var(--font-lucid);
+  font-size: var(--font-size);
+}
+
+.background{
+  height: 80vh;
+  width: 50%;
+  z-index: 0;
+  background-color: #6363CE;
+}
+
+main{
+  width: 70%;
+  height: 70vh;
+  background-color: #FFF;
+  padding: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title{
+  font-size:2rem
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.flex-item{
+  position: relative;
+  flex-basis: 30%;
+  border:1px solid gainsboro;
+  border-radius: 5px;
+  padding:20px;
+  height: 40vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.amount{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.describe{
+  display: inline-block;
+  font-size: 0.7rem;
+}
+
+.flex-item button{
+  position: absolute;
+  bottom: 10%;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: #6363CE;
+  font-size: 0.8rem;
+  font-family: var(--lucid);
+  border:none;
+  outline:none;
+  box-shadow: none;
+  padding:10px 10px;
+  width:150px;
+  max-width:200px !important;
+}
+
+
+
+
+
